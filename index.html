@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            gap: 20px;
+            justify-content: center;
+        }
+        .size
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(157, 188, 225);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div index="0" class="size" id="cell"></div>
+        <div index="1" class="size" id="cell"></div>
+        <div index="2" class="size" id="cell"></div>
+        <div index="3" class="size" id="cell"></div>
+        <div index="4" class="size" id="cell"></div>
+        <div index="5" class="size" id="cell"></div>
+        <div index="6" class="size" id="cell"></div>
+        <div index="7" class="size" id="cell"></div>
+        <div index="8" class="size" id="cell"></div>
+    </div>
+    <center><h2 class="status">text</h2></center>
+    <center><button class="resbut">Restart</button></center>
+    
+    <script src="script.js"></script>
+</body>
+</html>
