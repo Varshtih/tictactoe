@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
     <style>
-        .container
-        {
+        .container {
             display: grid;
             grid-template-columns: 100px 100px 100px;
             gap: 20px;
             justify-content: center;
+            position: relative;
+            margin-top: 20px;
         }
-        .size
-        {
+        .size {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -21,6 +21,15 @@
             width: 100px;
             height: 100px;
             background-color: rgb(157, 188, 225);
+        }
+        .line {
+            position: absolute;
+            width: 0;
+            height: 5px;
+            background-color: rgb(5, 5, 5);
+            transition: width 0.3s ease-in-out;
+            transform-origin: left center;
+            z-index: 1;
         }
     </style>
 </head>
@@ -35,10 +44,11 @@
         <div index="6" class="size" id="cell"></div>
         <div index="7" class="size" id="cell"></div>
         <div index="8" class="size" id="cell"></div>
+        <div class="line"></div> <!-- Line added for the winning combo -->
     </div>
     <center><h2 class="status">text</h2></center>
     <center><button class="resbut">Restart</button></center>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
